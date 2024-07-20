@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vissu.css">
+</head>
+<body>
+<h1>factorial function</h1>
+enter the num: <input type="text" id="num">
+<br>
+<button onclick="fact()">click</button>
+<p id="res"></p>
+<script>
+    function fact(){
+        var i,num,j;
+        j=1;
+        num=document.getElementById("num").value;
+    for(i=1;i<=num;i++)
+    {
+      j=i*j;
+    }
+    document.getElementById("res").innerHTML="fact value"+i+"fact"+j;
+         
+    }
+
+</script>
+
+</body>
+</html>
